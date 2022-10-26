@@ -14,27 +14,33 @@
         <section>
 
             <div class="search">
-                <input type="text" placeholder="Search" id="search-box">
-                <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="1em" height="1em" class="w-6 h-6">
+                <input type="text" placeholder="Search" class="search-box">
+                <button class="button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="1em" height="1em" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                   </svg>
                   </button>
             </div>
+            <div class="hide show">
+                <div>
+                    <h3>Weather in <span class="city-name">Delhi</span></h3>
+                    <h2 class="temp">28.2</h2>
+                </div>
 
-            <div>
-                <p>Weather in <span>Delhi</span></p>
-                <h2>28.2°C</h2>
-            </div>
-
-            <div>
-                <p><img src="" alt=""> Broken cloud</p>
-                <p>Humidity: 50%</p>
-                <p>Wind: 14km/h</p>
+                <div>
+                    <div class="flex">
+                        <img src="" alt="" class="img" >
+                        <p class="details">Broken cloud</p>
+                    </div>
+                    <p class="humidity">Humidity: 50%</p>
+                    <p class="wind">Wind: 14km/h</p>
+                </div>
             </div>
 
         </section>
 
     </main>
     
+<script src="main.js"></script>
+
 </body>
 </html>

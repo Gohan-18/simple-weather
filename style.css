@@ -7,7 +7,8 @@
 }
 
 .container {
-    background: #006d77;
+    /* background: #006d77; */
+    background: url("https://source.unsplash.com/1600x900/?landscape");
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -17,8 +18,8 @@
 
 section {
     font-family: 'Poppins', sans-serif;
-    color: aliceblue;
-    background: #00000085;
+    color: #e2e3e4;
+    background: #000000ba;
     width: 100%;
     max-width: 500px;
     margin: 10px;
@@ -36,7 +37,7 @@ div {
     align-items: center;
 }
 
-#search-box {
+.search-box {
     background-color: #4c4c4c57;
     outline: none;
     color: #e2e3e4;
@@ -62,4 +63,26 @@ button {
 
 button:hover {
     background-color: #6f6f6f67;
+}
+
+div p {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: none;
+    margin: none;
+}
+
+.img {
+    margin-bottom: 6px;
+    margin-right: 5px;
+}
+
+.show {
+    display: none;
 }
