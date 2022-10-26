@@ -17,7 +17,10 @@ btn.addEventListener("click", () => {
 const fetchWeather = (city) => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
     .then((response) => response.json())
-    .then((data) => displayDetails(data));
+    .then((data) => displayDetails(data))
+    .catch((e) => {
+        alert(`ERROR IN PARSING WEATHER REPORT OF THE GIVEN CITY!!! \n Please check if you have entered correct spelling of the city...`);
+    })
 }
 
 const displayDetails = (data) => {
